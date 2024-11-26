@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: tet                         #                     #
+    groups: sudo                      #Создает пользователя #
+    shell: /bin/bash                  #и выдает права SUDO  #
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]  #                     #
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPA90bX+wa86GNjQBorTMvgO4Itmk2JaHe9w7//yUu9/ tet@debrab #Сгенерированный SSH ключ с рабочей машины.
